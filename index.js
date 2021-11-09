@@ -42,7 +42,7 @@ async function invokeAction({ action, id, name, email, phone }) {
           console.log("no such contact to delete");
           return;
         }
-        console.log(`contact with ${id} has been deleted`);
+        console.table(delContact);
         break;
 
       default:
